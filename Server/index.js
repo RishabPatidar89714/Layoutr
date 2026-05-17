@@ -22,5 +22,5 @@ app.use((err, req, res, next) => {
 
 app.listen(PORT, () => {
   console.log(`\n Layout Agent server running at http://localhost:${PORT}`)
-  console.log(`   API key: ${process.env.ANTHROPIC_API_KEY ? '✓ set' : '✗ MISSING — add to .env'}\n`)
+  console.log(`   Gemini API key: ${process.env.GEMINI_API_KEY ? '✓ set' : '✗ MISSING — add to .env'}\n`)
 })
